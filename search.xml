@@ -1,34 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/03/28/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><span id="more"></span>
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/2021/03/30/test/</url>
-    <content><![CDATA[]]></content>
+    <title>command-line 指令</title>
+    <url>/2021/04/12/command-line/</url>
+    <content><![CDATA[<h2 id="使用cmd"><a href="#使用cmd" class="headerlink" title="使用cmd"></a>使用cmd</h2><p>下載git 使用其git-bash</p>
+<span id="more"></span>
+<h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><table>
+<thead>
+<tr>
+<th align="center">指令</th>
+<th align="center">說明</th>
+<th align="center">例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">pwd(cd)</td>
+<td align="center">查看目前位置</td>
+<td align="center"><code>pwd</code></td>
+</tr>
+<tr>
+<td align="center">ls(dir -l)</td>
+<td align="center">顯示檔案</td>
+<td align="center"><code>ls -al</code></td>
+</tr>
+<tr>
+<td align="center">cd</td>
+<td align="center">選擇檔案</td>
+<td align="center"><code>cd work</code> (進到work資料夾)</td>
+</tr>
+<tr>
+<td align="center">help</td>
+<td align="center">查詢指令功能</td>
+<td align="center"><code>help cd</code> (Ms限定)</td>
+</tr>
+<tr>
+<td align="center">touch</td>
+<td align="center">建立檔案or更改時間</td>
+<td align="center"><code>touch 123</code>(沒有123則新增，反之更改成現在時間)</td>
+</tr>
+<tr>
+<td align="center">rm(del)</td>
+<td align="center">刪除檔案</td>
+<td align="center"><code>rm 123</code>(刪除123檔)<br><code>rm -r 1234</code>(刪除1234資料夾)</td>
+</tr>
+<tr>
+<td align="center">mkdir(md)</td>
+<td align="center">新增資料夾</td>
+<td align="center"><code>mkdir 1234</code></td>
+</tr>
+<tr>
+<td align="center">mv(ren)</td>
+<td align="center">移動檔案或改名</td>
+<td align="center"><code>mv 123 1234</code>(有1234資料夾則移動至夾內，反之123檔名變成1234)</td>
+</tr>
+<tr>
+<td align="center">cp(copy)</td>
+<td align="center">複製</td>
+<td align="center"><code>cp 123 1234</code>(複製123檔成1234檔)</td>
+</tr>
+<tr>
+<td align="center">vim</td>
+<td align="center">文字編輯器</td>
+<td align="center">vim 123(編輯123檔)<br><code>i</code> 撰寫模式 <code>Esc</code>鎖定 <code>:q</code>不儲存離開 <code>:wq</code>儲存離開</td>
+</tr>
+<tr>
+<td align="center">cat</td>
+<td align="center">叫出文本內容</td>
+<td align="center"><code>cat 123</code></td>
+</tr>
+<tr>
+<td align="center">grep</td>
+<td align="center">抓取關鍵字</td>
+<td align="center"><code>grep o 123</code> 找尋123中的o(git-brah不會反紅)</td>
+</tr>
+<tr>
+<td align="center">&gt; <br> &gt;&gt; <br> echo</td>
+<td align="center">加入文本入檔</td>
+<td align="center"><code>ls 123 &gt;1234</code>打印123的內容輸入1234中 <br><code>echo &quot;1234&quot; &gt; 1234</code>把1234(字元)<strong>覆蓋</strong>1234檔中所有內容<br><code>echo &quot;hello world&quot; &gt;&gt; 1234</code>把hello world(字元)<strong>增加</strong>1234檔中所有內容</td>
+</tr>
+</tbody></table>
+<!-- | `|` |連結| `cat 1234 | grep o` 打開文本內容並找尋其含有o的字句| -->]]></content>
       <categories>
-        <category>程式</category>
+        <category>鋰學院第五屆計畫</category>
       </categories>
       <tags>
+        <tag>command</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo(未完)</title>
+    <url>/2021/04/08/hexo/</url>
+    <content><![CDATA[<h2 id="生成hexo"><a href="#生成hexo" class="headerlink" title="生成hexo"></a>生成hexo</h2><p>  &emsp; &emsp; 需要先安裝node.js和git</p>
+<span id="more"></span>
+<h3 id="安裝-install-Hexo"><a href="#安裝-install-Hexo" class="headerlink" title="安裝(install) Hexo"></a>安裝(install) Hexo</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<h3 id="興建-Hexo"><a href="#興建-Hexo" class="headerlink" title="興建 Hexo"></a>興建 Hexo</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo init &lt;folder&gt; <span class="comment">//&lt;folder&gt;要新增的名稱</span></span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<h2 id="放至github"><a href="#放至github" class="headerlink" title="放至github"></a>放至github</h2><h3 id="github創立-使用自己的帳號"><a href="#github創立-使用自己的帳號" class="headerlink" title="github創立(使用自己的帳號)"></a>github創立(使用自己的帳號)</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">k1325699.github.io</span><br></pre></td></tr></table></figure>
+<p><img src="pic1.png" alt="pic1"></p>
+<h3 id="本地執行"><a href="#本地執行" class="headerlink" title="本地執行"></a>本地執行</h3><p>指令</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p><a href="http://localhost:4000/">http://localhost:4000/</a></p>
+]]></content>
+      <tags>
         <tag>hexo</tag>
-        <tag>text</tag>
       </tags>
   </entry>
 </search>
