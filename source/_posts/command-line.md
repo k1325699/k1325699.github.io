@@ -1,9 +1,10 @@
 ---
 title: command-line 指令
 date: 2021-04-12 21:20:39
-categories: 鋰學院第五屆計畫
+categories: command-line
 tags:
   - command
+  - 鋰學院第五屆計畫
 ---
 ## 使用cmd
 下載git 使用其git-bash

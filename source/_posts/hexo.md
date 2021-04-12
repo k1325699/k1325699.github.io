@@ -1,6 +1,7 @@
 ---
 title: hexo(未完)
 date: 2021-04-08 14:51:30
+categories: hexo
 tags:
   - hexo
 ---
