@@ -81,10 +81,11 @@
 </tbody></table>
 <!-- | `|` |連結| `cat 1234 | grep o` 打開文本內容並找尋其含有o的字句| -->]]></content>
       <categories>
-        <category>鋰學院第五屆計畫</category>
+        <category>command-line</category>
       </categories>
       <tags>
         <tag>command</tag>
+        <tag>鋰學院第五屆計畫</tag>
       </tags>
   </entry>
   <entry>
@@ -101,6 +102,9 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p><a href="http://localhost:4000/">http://localhost:4000/</a></p>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
       <tags>
         <tag>hexo</tag>
       </tags>
