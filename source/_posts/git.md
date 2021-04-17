@@ -23,6 +23,10 @@ tags:
 ```
 git add 123 (將123檔案加至控管當中)
 git add .(將資料夾中的所有檔案加入控管當中)
+
+git add -A
+git add --all 把所有專案的內容放進控管
+
 ```
 
 ### git commit
