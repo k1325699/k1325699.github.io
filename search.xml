@@ -78,6 +78,26 @@
 <td align="center">加入文本入檔</td>
 <td align="center"><code>ls 123 &gt;1234</code>打印123的內容輸入1234中 <br><code>echo &quot;1234&quot; &gt; 1234</code>把1234(字元)<strong>覆蓋</strong>1234檔中所有內容<br><code>echo &quot;hello world&quot; &gt;&gt; 1234</code>把hello world(字元)<strong>增加</strong>1234檔中所有內容</td>
 </tr>
+<tr>
+<td align="center">curl</td>
+<td align="center">顯示回傳respond</td>
+<td align="center"><code>curl 網址</code> <br><code>curl -s 網址</code> (隱藏進度條)顯示回傳respond</td>
+</tr>
+<tr>
+<td align="center">grep</td>
+<td align="center">搜尋關鍵字</td>
+<td align="center">grep 關鍵字 尋找位置 <br>ex. grep name /bin 找到尋找位置裡的關鍵字<br>grep -n 顯示關鍵字所在的行數</td>
+</tr>
+<tr>
+<td align="center">awk</td>
+<td align="center">以欄為單位數據處理</td>
+<td align="center">awk ‘BEGIN {FS=”:”} {print $3}’<br>FS代表目前的分隔字元，預設是空白鍵<br>print為把某欄東西列出來，範例為第三欄<br>BEGIN代表著先執行以下，像是這個範例是先執行 {FS=”:”}，才找到$3打印</td>
+</tr>
+<tr>
+<td align="center">sed</td>
+<td align="center">串流編輯</td>
+<td align="center">s:取代 sed ‘s/have/had/1<br>#把每行第一個have取代成had</td>
+</tr>
 </tbody></table>
 <!-- | `|` |連結| `cat 1234 | grep o` 打開文本內容並找尋其含有o的字句| -->]]></content>
       <categories>
